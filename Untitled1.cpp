@@ -1,4 +1,4 @@
-//å¦‚ä½•å®ç°ä¸€ä¸ªé¡ºåºè¡¨ï¼Ÿ
+//ÈçºÎÊµÏÖÒ»¸öË³Ğò±í£¿
 #include<stdio.h>
 typedef struct{
   int data[100];
@@ -14,10 +14,10 @@ int main()
  show(L);
  return 0;
 }
-void creat(Sqlist &L)//ä¸è¦å¿˜è®°å‡½æ•°ç±»å‹
+void creat(Sqlist &L)
 {
   int a;
-  printf("è¯·è¾“å…¥è¦åˆ›å»ºçš„å…ƒç´ ä¸ªæ•°\t");
+  printf("ÇëÊäÈëÒª´´½¨µÄÔªËØ¸öÊı\t");
   scanf("%d",&a);
   for(int i=0;i<a;i++)
   {
@@ -27,10 +27,10 @@ void creat(Sqlist &L)//ä¸è¦å¿˜è®°å‡½æ•°ç±»å‹
 }
 void show(Sqlist &L)
 {
-  printf("é¡ºåºè¡¨ä¸­å…ƒç´ æ˜¯");
+  printf("Ë³Ğò±íÖĞÔªËØÊÇ");
   for(int i=0;i<L.length;i++)
   {
-    printf("%d ",L.data[i]);//å…ƒç´ è¾“å‡ºæ—¶æ³¨æ„æ ¼å¼
+    printf("%d",L.data[i]);
   }
   printf("\n");
 }
