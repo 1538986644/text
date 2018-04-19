@@ -8,11 +8,17 @@ typedef struct{
 }Sqlist;
 void InitList(Sqlist *&L);//顺序表指针
 void show(Sqlist *&L);
+bool ListEmpty(Sqlist *L);
+int ListLength(Sqlist *L);//求线性表的长度
 int main()
 {
+int a,b;
   Sqlist *L;//因为是顺序表指针所以必须这样定义：Sqlist *L
   InitList(L);
   show(L);
+  a=ListEmpty(L);
+  b=ListLength(L);
+printf("%d %d",a,b);
 }
 void InitList(Sqlist *&L)
 {
@@ -25,4 +31,13 @@ void show(Sqlist *&L)
   {
     printf("%d",L->data[i]);
   }
+}
+//判断线性表是否为空表
+bool ListEmpty(Sqlist *L)
+{
+return(L->length==0);
+}
+int ListLength(Sqlist *L)
+{
+return(L->length);
 }
